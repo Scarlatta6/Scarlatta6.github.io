@@ -36,9 +36,10 @@
 }
 
 .castro, .sanma, .tasnim, .euterpe, .winter, .solista {
-    color: rgb(190, 148, 249);
+    color: aliceblue;
     margin-left: 35px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.18em;
 }
 
 #castro, #sanma, #tasnim,  #euterpe, #winter, #solista {
