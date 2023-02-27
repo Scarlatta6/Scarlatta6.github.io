@@ -5,7 +5,11 @@
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
             <link rel="stylesheet" href="styles.css">
+            
+            <script src="JS/scrollreveal.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
             
 
         </head>
@@ -13,10 +17,12 @@
         <body>
             <div class="background">
 
-              <h1 class="scar display-1">Scarlatta</h1>
+              <div class="cont-scar" data-aos="fade-down">
+                <h1 class="scar display-1">Scarlatta</h1>
+              </div>
               
-              <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary" style="background-color: rgb(59, 33, 83);">
-                <div class="container-fluid">
+              <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary" style="background-color: rgb(59, 33, 83);" data-aos="fade-down">
+                <div class="cont1 container-fluid">
                   <a class="navbar-brand" href="#"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,11 +40,11 @@
                           Videos
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="background-color:rgb(59, 33, 83);">
-                          <li><a class="dropdown-item" href="#">Snake Eater</a></li>
-                          <li><a class="dropdown-item" href="#">My Immortal</a></li>
-                          <li><a class="dropdown-item" href="#">Unstolen Jewel</a></li>
+                          <li><a class="dropdown-item" href="#snake-vid">Snake Eater</a></li>
+                          <li><a class="dropdown-item" href="#immortal-vid">My Immortal</a></li>
+                          <li><a class="dropdown-item" href="#unstolen-vid">Unstolen Jewel</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="https://www.youtube.com/@scarlatta_singer" target="_blank">Access all videos</a></li>
+                          <li><a class="dropdown-item" href="https://www.youtube.com/@scarlatta_singer" target="_blank">Todos los videos</a></li>
                         </ul>
                       </li>
                       <li class="nav-item dropdown">
@@ -46,7 +52,7 @@
                         <ul class="dropdown-menu dropdown-menu-dark" style="background-color:rgb(59, 33, 83);">
                           <li><a class="dropdown-item" href="https://cafecito.app/scarlatta" target="_blank">En Argentina</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="https://ko-fi.com/scarlatta" target="_blank">En otros países</a></li>
+                          <li><a class="dropdown-item" href="https://ko-fi.com/scarlatta" target="_blank">En otro país</a></li>
                       </li>
                     </ul>
                     <!--<form class="d-flex" role="search">
@@ -57,12 +63,14 @@
                 </div>
               </nav>
 
-              <div class="container-fluid py-4">
-                  <div class="row justify-content-start">
-                      <div class="col-3">
+              <div id="home" class="container-fluid py-4">
+                  <div class="cont2 row justify-content-start">
+                      <div class="cont-pic col-3">
                           <img src="IMG/Picture Scarlatta.jpg" id="scarlatta-pic" class="img-fluid rounded" alt="Scarlatta">
                       </div>
-                      <div class="col-8">
+                      <div class="main-text col-8" data-aos="fade-left"
+                      data-aos-offset="200"
+                      data-aos-easing="ease-in-sine">
                           <p id="bio-txt">Cantante, actriz y bailarina nacida en Buenos Aires el 9 de junio de 1990, que comenzó sus estudios en danza árabe cuando tenía 11 años y tomó sus primeras clases de guitara clásica a los 13.<br>                        Aún en la búsqueda de lo que le apasionaría más en la vida, ingresó al conservatorio de música a los 16 años, estudiando piano, pero finalmente a los 17 años, por diversas circunstancias de la vida terminaría estudiando canto e ingresando por primera vez a un coro. De ahí en más el canto lideró su actividad artística, formó la banda WinterHeart, la cual inició realizando covers de Nightwish y Tarja para luego lanzarse a producir música propia, de la mano de Mariano Aldana, su hermano bajista y Maximiliano Conci, guitarrista y compositor. La banda estuvo activa por 8 años, mientras los cuales, scarlatta se desarrolló en el estudio del canto lírico, la ópera y consiguió papeles en compañías de comedia musical under, como "Clásicos de la comedia Musical" y "CachiBache producciones", también integró el cuarteto de música folklórica "Aire de Rosas" obteniendo roles como solista. Actualmente se dedica en forma profesional a cantar solista para eventos privados y para eventos de la cultura pop relacionados con el Anime y los videojuegos e integra el coro Nagmén. Su repertorio es tan amplio que abarca desde la ópera hasta el metal sinfónico, pasando por el pop y los clásicos del Anime. También realiza presentaciones en vivo por streaming en su canal de Twitch.
                           </p>
                       </div>
@@ -71,11 +79,12 @@
                   
               </div>
               
-              <span></span>
 
               <!--Pictures-->
-              <div id="carouselExample" class="container carousel slide">
-                <h1>Galería</h1>
+              <div id="carouselExample" class="cont3 container carousel slide" data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <h1 class="gallery display-3">Fotos</h1>
                   <div class="row carousel-inner">
                     <div class="carousel-item active">
                       <img src="IMG/snake eater.jpg" class="d-flex w-100" alt="Snake Eater vid">
@@ -89,26 +98,58 @@
                     <div class="carousel-item">
                       <img src="img/immortal.jpg" class="d-flex w-100" alt="My Immortal vid">
                     </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-              </div>
+                  
 
-              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+                  <!--Videos-->
+                  <div id="cont-videos" class="cont4 container-fluid" data-aos="fade-up"
+                  data-aos-offset="350"
+                  data-aos-easing="ease-in-sine">
+                    <h1 class="gallery display-3">Videos</h1>
 
+                    <iframe id="snake-vid" width="560" height="315" src="https://www.youtube.com/embed/QSl0bb3vHnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <br>
+
+                    <iframe id="immortal-vid" width="560" height="315" src="https://www.youtube.com/embed/THKI_Oqt2VE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <br>
+
+                    <iframe id="unstolen-vid" width="560" height="315" src="https://www.youtube.com/embed/PplHAYWV_T8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+              
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>
+                  AOS.init();
+                </script>
+                <script src="JS/main.js"></script>
             </div>
         </body>
-
+      
         <footer>
-            <h6>All rights reserved</h6>
+            <h6>Todos los derechos reservados</h6>
             <nav>
-                <h6>CONTACT</h6>
+                <h6>CONTACTO</h6>
+                <div id="nav-buttons">
+                  <button type="button" class="btn" style="background-color: blueviolet;"><a href="https://www.facebook.com/Scarlattaweb" target="_blank">Facebook
+                  </a></button>
+                  <button type="button" class="btn" style="background-color: blueviolet;"><a href="https://www.instagram.com/scarlatta_singer" target="_blank">
+                    Instagram
+                  </a></button>
+                  <button type="button" class="btn" style="background-color: blueviolet;"><a href="https://twitter.com/ScarlattaSinger" target="_blank">
+                    Twitter
+                  </a></button>
+                </div>
             </nav>
         </footer>
         
