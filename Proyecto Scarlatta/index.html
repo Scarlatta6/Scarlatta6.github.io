@@ -8,6 +8,7 @@
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
             <link rel="stylesheet" href="styles.css">
             
+            
             <script src="JS/scrollreveal.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
             
@@ -30,7 +31,10 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Principal</a>
+                        <a class="nav-link" aria-current="page" href="#habilities">Estudios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#carouselExample">Fotos</a>
@@ -47,7 +51,7 @@
                           <li><a class="dropdown-item" href="https://www.youtube.com/@scarlatta_singer" target="_blank">Todos los videos</a></li>
                         </ul>
                       </li>
-                      <li class="nav-item dropdown">
+                      <li id="donar" class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Donar</a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="background-color:rgb(59, 33, 83);">
                           <li><a class="dropdown-item" href="https://cafecito.app/scarlatta" target="_blank">En Argentina</a></li>
@@ -68,15 +72,82 @@
                       <div class="cont-pic col-3">
                           <img src="IMG/Picture Scarlatta.jpg" id="scarlatta-pic" class="img-fluid rounded" alt="Scarlatta">
                       </div>
-                      <div class="main-text col-8" data-aos="fade-left"
-                      data-aos-offset="200"
-                      data-aos-easing="ease-in-sine">
+                      <div class="main-text col-8">
                           <p id="bio-txt">Cantante, actriz y bailarina nacida en Buenos Aires el 9 de junio de 1990, que comenzó sus estudios en danza árabe cuando tenía 11 años y tomó sus primeras clases de guitara clásica a los 13.<br>                        Aún en la búsqueda de lo que le apasionaría más en la vida, ingresó al conservatorio de música a los 16 años, estudiando piano, pero finalmente a los 17 años, por diversas circunstancias de la vida terminaría estudiando canto e ingresando por primera vez a un coro. De ahí en más el canto lideró su actividad artística, formó la banda WinterHeart, la cual inició realizando covers de Nightwish y Tarja para luego lanzarse a producir música propia, de la mano de Mariano Aldana, su hermano bajista y Maximiliano Conci, guitarrista y compositor. La banda estuvo activa por 8 años, mientras los cuales, scarlatta se desarrolló en el estudio del canto lírico, la ópera y consiguió papeles en compañías de comedia musical under, como "Clásicos de la comedia Musical" y "CachiBache producciones", también integró el cuarteto de música folklórica "Aire de Rosas" obteniendo roles como solista. Actualmente se dedica en forma profesional a cantar solista para eventos privados y para eventos de la cultura pop relacionados con el Anime y los videojuegos e integra el coro Nagmén. Su repertorio es tan amplio que abarca desde la ópera hasta el metal sinfónico, pasando por el pop y los clásicos del Anime. También realiza presentaciones en vivo por streaming en su canal de Twitch.
                           </p>
                       </div>
                       
                   </div>
                   
+              </div>
+
+              <div id="habilities" class="container-fluid" data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <h1 class="gallery display-3">Estudios</h1>
+                
+                <div class="castro">
+                  <h3>Conservatorio Juan José Castro</h3>
+                  <h4>Martinez, Buenos Aires (2011-2014)</h4>
+                  <button id="mostrar-castro" class="btn btn-dark" style="background-color: blueviolet;" >Ver</button>
+                  <button id="ocultar-castro" class="btn btn-dark" style="background-color: blueviolet;">Ocultar</button>
+                  <p id="castro">Carrera profesorado de canto lírico. Nivel alcanzado FOBA III</p>
+                </div>
+
+                <br>
+
+                <div class="sanma">
+                  <h3>Conservatorio Schiuma</h3>
+                  <h4>San Martín , Buenos Aires (2006-2008)</h4>
+                  <button id="mostrar-sanma" class="btn btn-dark" style="background-color: blueviolet;" >Ver</button>
+                  <button id="ocultar-sanma" class="btn btn-dark" style="background-color: blueviolet;">Ocultar</button>
+                  <p id="sanma">Carrera profesorado de piano. Nivel alcanzado: FOBA II</p>
+                </div>
+
+                <br>
+
+                <div class="tasnim">
+                  <h3>Escuela de Danzas Arabes Tasnim</h3>
+                  <h4>San Martín , Buenos Aires (2001-2007)</h4>
+                  <button id="mostrar-tasnim" class="btn btn-dark" style="background-color: blueviolet;" >Ver</button>
+                  <button id="ocultar-tasnim" class="btn btn-dark" style="background-color: blueviolet;">Ocultar</button>
+                  <p id="tasnim">Carrera profesorado de danzas árabes. Disciplinas alcanzadas: Danza con velos, danza del bastón, con uno y dos bastones, candelabro, afro, Dabke, danza marroquí, ritmología y uso de chinchines.</p>
+                </div>
+              </div>
+
+              <div id="experience" class="container-fluid" data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <h1 class="gallery display-3">Experiencia</h1>
+
+                <div class="euterpe">
+                  <h3>Coro Euterpe</h3>
+                  <h4>San Martín, Buenos Aires (2006-2008)</h4>
+                  <button id="mostrar-euterpe" class="btn btn-dark" style="background-color: blueviolet;" >Ver</button>
+                  <button id="ocultar-euterpe" class="btn btn-dark" style="background-color: blueviolet;">Ocultar</button>
+                  <p id="euterpe">Primer experiencia incursionando en el canto, cuerda soprano. Coro dirigido por el maestro Daniel Somoza LLera</p>
+                </div>
+
+                <br>
+
+                <div class="winter">
+                  <h3>WinterHeart</h3>
+                  <h4>San Martín, Buenos Aires (2006-2016)</h4>
+                  <button id="mostrar-winter" class="btn btn-dark" style="background-color: blueviolet;" >Ver</button>
+                  <button id="ocultar-winter" class="btn btn-dark" style="background-color: blueviolet;">Ocultar</button>
+                  <p id="winter">Banda de power metal que inició con la idea de hacer covers de Nightwish y Tarja y luego comenzó a componer temas propios. Contienen un demo con 5 canciones y varias presentaciones en vivo en la ciudad de Buenos Aires en su haber.</p>
+                </div>
+
+                <br>
+
+                <div class="solista">
+                  <h3>Cantante Solista</h3>
+                  <h4>Buenos Aires (2010-Actualidad)</h4>
+                  <button id="mostrar-solista" class="btn btn-dark" style="background-color: blueviolet;" >Ver</button>
+                  <button id="ocultar-solista" class="btn btn-dark" style="background-color: blueviolet;">Ocultar</button>
+                  <p id="solista">Cantante solista por contrataciones para eventos, publicación de contenido en las redes, streaming por la plataforma <a href="https://www.twitch.tv/scarlatta_singer" target="_blank">Twitch</a> y como "Anisinger" en eventos de anime y cultura pop.</p>
+                </div>
+
               </div>
               
 
@@ -111,7 +182,7 @@
                   
 
                   <!--Videos-->
-                  <div id="cont-videos" class="cont4 container-fluid" data-aos="fade-up"
+                  <div id="cont-videos" class="cont4 container-fluid" data-aos="fade-left"
                   data-aos-offset="350"
                   data-aos-easing="ease-in-sine">
                     <h1 class="gallery display-3">Videos</h1>
@@ -128,11 +199,12 @@
                   </div>
                 </div>
               
+                <script src="JS/main.js"></script>
                 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                 <script>
                   AOS.init();
                 </script>
-                <script src="JS/main.js"></script>
+               
             </div>
         </body>
       

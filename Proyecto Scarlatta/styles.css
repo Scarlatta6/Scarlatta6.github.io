@@ -7,6 +7,7 @@
     margin-bottom: 70px;
 }
 
+
 .scar, .gallery, #cont-videos {
     color: rgb(190, 148, 249);
     margin-left: 35px;
@@ -30,6 +31,30 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+#habilities {
+    margin-bottom: 70px;
+}
+
+.castro, .sanma, .tasnim, .euterpe, .winter, .solista {
+    color: rgb(190, 148, 249);
+    margin-left: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#castro, #sanma, #tasnim,  #euterpe, #winter, #solista {
+    display: none;
+}
+
+.btn {
+    margin-left: 10px;
+    transition: .2s;
+}
+
+.btn:hover {
+    border-color: rgb(189, 136, 239);
+    transform: scale(1.1);
+}
+
 #cont-videos {
     margin-top: 100px;
     padding-bottom: 100px;
@@ -45,6 +70,7 @@ footer {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #nav-buttons {
@@ -66,6 +92,5 @@ footer {
 #nav-buttons a {
     text-decoration: none;
     color: white;
-    
 }
 
